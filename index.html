@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--Code By Rakhi-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Screen Landing Page || Dev.GeniusHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <section class="screen left">
+            <h1>Men Fashion</h1>
+            <div>
+                <a href="#" class="button">Learn More</a>
+            </div>
+        </section>
+
+        <section class="screen right">
+            <h1>Women Fashion</h1>
+            <div>
+                <a href="#" class="button">Learn More</a>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        //Search and select the elements
+
+        const right = document.querySelector(".right");
+        const left = document.querySelector(".left");
+        const container = document.querySelector(".container");
+
+        left.addEventListener("mouseenter", ()=>{
+            container.classList.add("hover-left");
+        })
+
+        left.addEventListener("mouseleave", ()=>{
+            container.classList.remove("hover-left");
+        })
+
+        right.addEventListener("mouseenter", ()=>{
+            container.classList.add("hover-right");
+        })
+
+        right.addEventListener("mouseleave", ()=>{
+            container.classList.remove("hover-right");
+        })
+
+    </script>
+
+</body>
+</html>
